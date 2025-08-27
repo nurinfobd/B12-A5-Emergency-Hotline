@@ -24,12 +24,16 @@
               </span>
           </div>
           <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-1 w-20">
-              <span class="text-sm font-bold text-slate-800">100</span>
+              <span class=" text-sm font-bold text-slate-800">100</span>
               <span class="inline-block w-5 h-5">
                   <img src="assets/coin.png" alt="Coin" class="w-full h-full object-contain">
               </span>
           </div>
-          <button class="rounded-full bg-green-600 px-3 py-1 w-20 text-white font-semibold text-sm">2 Copy </button>
+                    <div class="flex items-center justify-center gap-1 rounded-full bg-green-600 px-3 py-1 w-20 text-white font-semibold text-sm">
+              <span id="copyCount" class=" text-sm font-bold text-white-800">0</span>
+              <span > Copy</span>
+          </div>
+          
       </div>
     </header>
     <section class="bg-[radial-gradient(circle,_#006747,_#013223)] text-center text-white py-5">
@@ -59,15 +63,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">National Emergency Number</h3>
+        <h3 class="service-name font-bold text-gray-800">National Emergency Number</h3>
         <p class="text-sm text-gray-500">National Emergency</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">999</p>
+        <p class="service-number text-2xl font-bold text-gray-900">999</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">All</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -95,15 +100,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Police Helpline Number</h3>
+        <h3 class="service-name font-bold text-gray-800">Police Helpline Number</h3>
         <p class="text-sm text-gray-500">Police</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">999</p>
+        <p class="service-number text-2xl font-bold text-gray-900">999</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Police</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -131,15 +137,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Fire Service Number</h3>
+        <h3 class="service-name font-bold text-gray-800">Fire Service Number</h3>
         <p class="text-sm text-gray-500">Fire Service</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">999</p>
+        <p class="service-number text-2xl font-bold text-gray-900">999</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Fire</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -167,15 +174,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Ambulance Service</h3>
+        <h3 class="service-name font-bold text-gray-800">Ambulance Service</h3>
         <p class="text-sm text-gray-500">Ambulance</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">1994-999999</p>
+        <p class="service-number text-2xl font-bold text-gray-900">1994-999999</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Health</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -203,15 +211,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Women & Clild Helpline  </h3>
+        <h3 class="service-name font-bold text-gray-800">Women & Clild Helpline  </h3>
         <p class="text-sm text-gray-500">Women & Clild Helpline</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">109</p>
+        <p class="service-number text-2xl font-bold text-gray-900">109</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Help</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -239,15 +248,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Anti-Corruption Helpline</h3>
+        <h3 class="service-name font-bold text-gray-800">Anti-Corruption Helpline</h3>
         <p class="text-sm text-gray-500">Anti-Corruption</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">106</p>
+        <p class="service-number text-2xl font-bold text-gray-900">106</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Govt.</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -275,15 +285,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Electricity Helpline</h3>
+        <h3 class="service-name font-bold text-gray-800">Electricity Helpline</h3>
         <p class="text-sm text-gray-500">Electricity Outage</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">16216</p>
+        <p class="service-number text-2xl font-bold text-gray-900">16216</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Electricity</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -311,15 +322,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Brac Helpline</h3>
+        <h3 class="service-name font-bold text-gray-800">Brac Helpline</h3>
         <p class="text-sm text-gray-500">Brac</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">16445</p>
+        <p class="service-number text-2xl font-bold text-gray-900">16445</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">NGO</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
@@ -347,15 +359,16 @@
         </div>
       </div>
       <div>
-        <h3 class="font-bold text-gray-800">Bangladesh Railway Helpline</h3>
+        <h3 class="service-name font-bold text-gray-800">Bangladesh Railway Helpline</h3>
         <p class="text-sm text-gray-500">Bangladesh Railway</p>
       </div>
       <div class="mt-4">
-        <p class="text-2xl font-bold text-gray-900">163</p>
+        <p class="service-number text-2xl font-bold text-gray-900">163</p>
         <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Travel</span>
       </div>
       <div class="mt-5 flex space-x-2">
-        <button class="flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+        <button class="copy-btn flex-1 px-3 py-2 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
             <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
