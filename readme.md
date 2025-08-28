@@ -4,9 +4,11 @@ Answer:
         getElementsByClassName= Selects all elements with a given class.
         querySelector / querySelectorAll= Selects elements using any CSS selector.
 
+
 2. How do you create and insert a new element into the DOM?
 Answer:
         Using document.createElement() to create the element, set its content or attributes, and insert it into the DOM with methods like appendChild(), prepend(), or insertBefore()
+
 
 3. What is Event Bubbling and how does it work?
 Answer:
