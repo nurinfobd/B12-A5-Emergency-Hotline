@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-const copyCounter = document.getElementById("copyCount"); 
+  const copyCounter = document.getElementById("copyCount"); 
   const copyButtons = document.querySelectorAll(".copy-btn");
 
   copyButtons.forEach(button => {
@@ -26,6 +26,9 @@ const copyCounter = document.getElementById("copyCount");
 
   const coinEl = document.getElementById("coin");
   const callButtons = document.querySelectorAll(".call-btn");
+
+  const historyContainer = document.getElementById("historyContainer");
+  const clearBtn = document.getElementById("clearHistory");
 
   callButtons.forEach(button => {
     button.addEventListener("click", (e) => {
@@ -47,7 +50,31 @@ const copyCounter = document.getElementById("copyCount");
 
       alert(`Calling ${name} ${number}...`);
 
+        if (historyContainer) {
+          const now = new Date();
+          const timeString = now.toLocaleTimeString("en-US", {
+            hour: "numeric", minute: "numeric", second: "numeric", hour12: true
+          });
+        
+
+          const template = document.getElementById("historyItemTemplate");
+          const historyItem = template.cloneNode(true);
+        
+          historyItem.classList.remove("hidden");
+        
+          historyItem.querySelector(".service-name").textContent = name;
+          historyItem.querySelector(".service-number").textContent = number;
+          historyItem.querySelector(".service-time").textContent = timeString;
+        
+          historyContainer.prepend(historyItem);
+        }
     });
   });
 
-});
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      historyContainer.innerHTML = "";
+    });
+  }
+
+}); 

@@ -17,21 +17,21 @@
         <span class="text-lg font-bold text-green-700">Emergency <br>Service</span>
       </div>
       <div class="flex items-center gap-4">
-          <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-1 w-20">
+          <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-2 w-20">
               <span id="heartCount" class="text-sm font-bold text-slate-800">0</span>
               <span class="inline-block w-5 h-5">
-                  <img src="assets/heart.png" alt="Coin" class="w-full h-full object-contain">
+                  <img src="assets/heart.png" alt="Heart" class="w-full h-full object-contain">
               </span>
           </div>
-          <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-1 w-20">
+          <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-2 w-20">
               <span  id="coin" class=" text-sm font-bold text-slate-800">100</span>
               <span class="inline-block w-5 h-5">
                   <img src="assets/coin.png" alt="Coin" class="w-full h-full object-contain">
               </span>
           </div>
-                    <div class="flex items-center justify-center gap-1 rounded-full bg-green-600 px-3 py-1 w-20 text-white font-semibold text-sm">
+                    <div class="flex items-center justify-center gap-1 rounded-full bg-green-600 px-3 py-2 w-20 text-white font-semibold text-sm">
               <span id="copyCount" class=" text-sm font-bold text-white-800">0</span>
-              <span > Copy</span>
+              <span> Copy</span>
           </div>
           
       </div>
@@ -58,7 +58,8 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
+          
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -97,7 +98,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -135,7 +136,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -173,7 +174,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -211,7 +212,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -249,7 +250,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -287,7 +288,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -325,7 +326,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -363,7 +364,7 @@
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-400 hover:text-red-500">
+          <button class="heart-btn text-gray-500 ">
             <i class="fa-regular fa-heart"></i>
           </button>
         </div>
@@ -401,24 +402,28 @@
 </div>
 
 
-
 <div class="lg:w-[25%] w-full ">
-    <div class="bg-white rounded-md shadow p-4 h-full">
-      <div class="flex items-center justify-between mb-4">
-        <div class="flex items-center space-x-2">
-          <i class="fa-regular fa-clock"></i>
-          <span class="font-semibold text-gray-700">Call History</span>
-        </div>
-        <button class="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-1 rounded-full">Clear</button>
+  <div class="bg-white rounded-md shadow p-4 h-full">
+    <div class="flex items-center justify-between mb-4">
+      <div class="flex items-center space-x-2">
+        <i class="fa-regular fa-clock"></i>
+        <span class="font-semibold text-gray-700">Call History</span>
       </div>
-    <div class="space-y-3">
-      <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg">
-        <div>
-          <p class="font-medium text-gray-800 text-sm">Fire Service Number</p>
-          <p class="text-gray-500 text-xs">999</p>
-        </div>
-        <p class="text-xs text-gray-500">11:36:58 AM</p>
+      <button id="clearHistory" class="bg-green-500 hover:bg-green-600 text-white text-sm px-5 py-2 rounded-full">
+        Clear
+      </button>
+    </div>
+    <div id="historyItemTemplate" class="hidden flex justify-between items-center bg-gray-50 p-3 rounded-lg">
+      <div>
+        <p class="font-medium text-gray-800 text-sm service-name"></p>
+        <p class="text-gray-500 text-xs service-number"></p>
       </div>
+      <p class="text-xs text-gray-500 service-time"></p>
+    </div>
+
+    <div id="historyContainer" class="space-y-3"></div>
+
+
     </div>
   </div>
 </div>
