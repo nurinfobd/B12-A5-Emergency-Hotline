@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
           historyItem.querySelector(".service-number").textContent = number;
           historyItem.querySelector(".service-time").textContent = timeString;
         
+
           historyContainer.prepend(historyItem);
         }
     });
@@ -76,5 +77,28 @@ document.addEventListener("DOMContentLoaded", () => {
       historyContainer.innerHTML = "";
     });
   }
+  const mobileBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
 
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    const syncCounts = () => {
+      const heartMobile = document.getElementById("heartCountMobile");
+      const coinMobile = document.getElementById("coinMobile");
+      const copyMobile = document.getElementById("copyCountMobile");
+
+      if (heartMobile) heartMobile.textContent = heartCounter.textContent;
+      if (coinMobile) coinMobile.textContent = coinEl.textContent;
+      if (copyMobile) copyMobile.textContent = copyCounter.textContent;
+    };
+
+    // Observe desktop counters for changes
+    const observer = new MutationObserver(syncCounts);
+    observer.observe(heartCounter, { childList: true });
+    observer.observe(coinEl, { childList: true });
+    observer.observe(copyCounter, { childList: true });
+  }
 }); 

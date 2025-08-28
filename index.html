@@ -16,7 +16,8 @@
         <img src="assets/logo.png"  alt="BD Logo" class="h-10 w-10">
         <span class="text-lg font-bold text-green-700">Emergency <br>Service</span>
       </div>
-      <div class="flex items-center gap-4">
+        <div class="hidden md:flex items-center gap-4" id="desktopCounters">
+
           <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-2 w-20">
               <span id="heartCount" class="text-sm font-bold text-slate-800">0</span>
               <span class="inline-block w-5 h-5">
@@ -33,9 +34,32 @@
               <span id="copyCount" class=" text-sm font-bold text-white-800">0</span>
               <span> Copy</span>
           </div>
-          
+      </div>
+      <div class="md:hidden relative">
+        <button id="mobileMenuBtn" class="flex items-center justify-center w-10 h-10 bg-green-600 text-white rounded-md">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobileMenu" class="hidden absolute right-0 mt-2 w-20 bg-white border rounded-md shadow-lg z-50 p-2 space-y-2 ">
+          <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-1 w-15">
+              <span id="heartCountMobile" class="text-sm font-bold text-slate-800">0</span>
+                <span class="inline-block w-5 h-5">
+                    <img src="assets/heart.png" alt="Heart" class="w-full h-full object-contain">
+                </span>
+          </div>
+          <div class="flex items-center justify-center gap-1 rounded-full bg-green-50 px-3 py-1 w-15">
+                <span  id="coinMobile" class=" text-sm font-bold text-slate-800">100</span>
+                  <span class="inline-block w-5 h-5">
+                      <img src="assets/coin.png" alt="Coin" class="w-full h-full object-contain">
+                  </span>
+          </div>
+          <div class="flex items-center justify-center gap-1 rounded-full bg-green-600 px-3 py-1 w-15 text-white font-semibold text-sm">
+                <span id="copyCountMobile" class=" text-sm font-bold text-white-800">0</span>
+                <span> Copy</span>
+          </div>
+        </div>
       </div>
     </header>
+    
     <section class="bg-[radial-gradient(circle,_#006747,_#013223)] text-center text-white py-5">
         <div class="flex justify-center">
           <img class="h-16 w-16 mb-4" src="assets/logo-dark.png" alt="Govt Logo" >
@@ -47,86 +71,83 @@
 <div class="flex flex-col lg:flex-row py-6 px-6 m-4 gap-5">
 <div class="lg:w-[75%] w-full  ">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-    
- 
-  
-    <div class="service-card bg-white rounded-md shadow p-5">
-      <div class="flex justify-between items-center rounded-lg mb-2">
-        <div class="flex items-center space-x-2">
-          <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-red-100">
-            <img src="assets/emergency.png" alt="Emergency" class="w-6 h-6 object-contain">
+
+        <div class="service-card bg-white rounded-md shadow p-5">
+          <div class="flex justify-between items-center rounded-lg mb-2">
+            <div class="flex items-center space-x-2">
+              <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-red-100">
+                <img src="assets/emergency.png" alt="Emergency" class="w-6 h-6 object-contain">
+              </div>
+            </div>
+            <div>
+              <button class="heart-btn text-gray-500 ">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
           </div>
-        </div>
-        <div>
-          <button class="heart-btn text-gray-500 ">
+          <div>
+            <h3 class="service-name font-bold text-gray-800">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <p class="service-number text-2xl font-bold text-gray-900">999</p>
+            <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">All</span>
+          </div>
+          <div class="mt-5 flex space-x-2">
+            <button class="copy-btn flex-1 px-3 py-1 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+            
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+            <button type="button"
+              class="call-btn flex-1 px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-gray-300 flex items-center justify-center space-x-2 text-md">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call</span>
+            </button>
           
-            <i class="fa-regular fa-heart"></i>
-          </button>
+          </div>
         </div>
-      </div>
-      <div>
-        <h3 class="service-name font-bold text-gray-800">National Emergency Number</h3>
-        <p class="text-sm text-gray-500">National Emergency</p>
-      </div>
-      <div class="mt-4">
-        <p class="service-number text-2xl font-bold text-gray-900">999</p>
-        <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">All</span>
-      </div>
-      <div class="mt-5 flex space-x-2">
-        <button class="copy-btn flex-1 px-3 py-1 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
 
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
-            <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
-            <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
-          </svg>
-          <span>Copy</span>
-        </button>
-        <button type="button"
-          class="call-btn flex-1 px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-gray-300 flex items-center justify-center space-x-2 text-md">
-          <i class="fa-solid fa-phone"></i>
-          <span>Call</span>
-        </button>
-
-      </div>
-    </div>
-
-    <div class="service-card bg-white rounded-md shadow p-5">
-      <div class="flex justify-between items-center rounded-lg mb-2">
-        <div class="flex items-center space-x-2">
-          <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100">
-            <img src="assets/police.png" alt="Police" class="w-6 h-6 object-contain">
+     <div class="service-card bg-white rounded-md shadow p-5">
+        <div class="flex justify-between items-center rounded-lg mb-2">
+          <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100">
+              <img src="assets/police.png" alt="Police" class="w-6 h-6 object-contain">
+            </div>
+          </div>
+          <div>
+            <button class="heart-btn text-gray-500 ">
+            <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
         </div>
         <div>
-          <button class="heart-btn text-gray-500 ">
-            <i class="fa-regular fa-heart"></i>
+          <h3 class="service-name font-bold text-gray-800">Police Helpline Number</h3>
+          <p class="text-sm text-gray-500">Police</p>
+        </div>
+        <div class="mt-4">
+          <p class="service-number text-2xl font-bold text-gray-900">999</p>
+          <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Police</span>
+        </div>
+        <div class="mt-5 flex space-x-2">
+          <button class="copy-btn flex-1 px-3 py-1 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
+          
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+              <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+          <button type="button"
+            class="call-btn flex-1 px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-gray-300 flex items-center justify-center space-x-2 text-md">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
           </button>
         </div>
       </div>
-      <div>
-        <h3 class="service-name font-bold text-gray-800">Police Helpline Number</h3>
-        <p class="text-sm text-gray-500">Police</p>
-      </div>
-      <div class="mt-4">
-        <p class="service-number text-2xl font-bold text-gray-900">999</p>
-        <span class="inline-block mt-2 px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">Police</span>
-      </div>
-      <div class="mt-5 flex space-x-2">
-        <button class="copy-btn flex-1 px-3 py-1 border rounded-lg text-gray-600 hover:bg-gray-100 flex items-center justify-center space-x-1 text-md">
-
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
-            <rect x="6" y="9" width="13" height="13" rx="2" ry="2"></rect>
-            <path d="M16 9V7a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 1 2h2"></path>
-          </svg>
-          <span>Copy</span>
-        </button>
-        <button type="button"
-          class="call-btn flex-1 px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-gray-300 flex items-center justify-center space-x-2 text-md">
-          <i class="fa-solid fa-phone"></i>
-          <span>Call</span>
-        </button>
-      </div>
-    </div>
 
     <div class="service-card bg-white rounded-md shadow p-5">
       <div class="flex justify-between items-center rounded-lg mb-2">
@@ -422,23 +443,11 @@
     </div>
 
     <div id="historyContainer" class="space-y-3"></div>
-
-
     </div>
   </div>
 </div>
 
-
-
-
-
-
-
-
-
 </div>
-
-
 
 <script src="js/script.js"></script>
 
