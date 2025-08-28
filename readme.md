@@ -1,4 +1,5 @@
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+
 Answer:
         getElementById= 
                         Selects a single element by its unique "id".
@@ -9,11 +10,13 @@ Answer:
 
 
 2. How do you create and insert a new element into the DOM?
+
     Answer:
         Using document.createElement() to create the element, set its content or attributes, and insert it into the DOM with methods like appendChild(), prepend(), or insertBefore()
 
 
 3. What is Event Bubbling and how does it work?
+
     Answer:
         Event Bubbling is a mechanism in the DOM where an event triggered on a child element propagates upward through its ancestors, all the way to the document root, unless explicitly stopped.
 
