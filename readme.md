@@ -1,11 +1,11 @@
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-Answer:
-        getElementById= 
-                        Selects a single element by its unique "id".
-        getElementsByClassName=
-                        Selects all elements with a given class.
-        querySelector / querySelectorAll=
+        Answer:
+            getElementById= 
+                            Selects a single element by its unique "id".
+            getElementsByClassName=
+                            Selects all elements with a given class.
+            querySelector / querySelectorAll=
                         Selects elements using any CSS selector.
 
 
@@ -17,7 +17,7 @@ Answer:
 
 3. What is Event Bubbling and how does it work?
 
-    Answer:
+        Answer:
         Event Bubbling is a mechanism in the DOM where an event triggered on a child element propagates upward through its ancestors, all the way to the document root, unless explicitly stopped.
 
         Working Process:
